@@ -16,7 +16,7 @@ $(document).ready(function() {
       },
       type: 'inline',
       removalDelay: 3,
-      closeOnBgClick: false,
+      closeOnBgClick: false
     });
   });
 
@@ -26,6 +26,7 @@ $(document).ready(function() {
         src: '#modalDepos'
       },
       type: 'inline',
+
     });
   });
 
@@ -35,6 +36,7 @@ $(document).ready(function() {
         src: '#modalVivod'
       },
       type: 'inline',
+      
     });
   });
 
