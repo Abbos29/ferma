@@ -66,6 +66,12 @@ body {
     left: 90px;
   }
 }
+@media (max-width: 350px) {
+  .main-plant {
+    top: 70px;
+    left: 60px;
+  }
+}
 
 .main-plant-garden {
   max-width: 240px;

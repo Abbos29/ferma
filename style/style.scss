@@ -91,6 +91,10 @@ body {
         top: 90px;
         left: 90px;
     }
+    @media (max-width: 350px) {
+        top: 70px;
+        left: 60px;
+    }
     
     // &::after {
         //     content: '';
