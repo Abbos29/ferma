@@ -26,10 +26,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(../img/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+}
+
+.main-ferm {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.main-ferm img {
+  max-width: 100%;
+  width: 100%;
 }
 
 .btn {
@@ -119,6 +132,10 @@ body {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
+}
+.footer__btn img {
+  max-width: 60px;
+  width: 100%;
 }
 .footer__left {
   max-width: 200px;
@@ -262,12 +279,16 @@ body {
   color: #fff;
 }
 .modal__list {
+  overflow-y: scroll;
+  height: 300px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: flex-start;
   align-items: stretch;
+  flex-wrap: nowrap;
 }
-.modal__list li {
+.modal__list tr {
   display: flex;
   align-items: center;
   justify-content: space-between;
