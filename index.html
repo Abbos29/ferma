@@ -24,7 +24,7 @@
 <div class="game-container" id="game-container">
     <div class="header">
         <div class="header__top">
-            <a id="btn1" class="header__btn btn" href="#">
+            <a id="btnBalance" class="header__btn btn" href="#">
                 <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 16.6667H2.8C2.8 18.1667 4.718 19.4444 7 19.4444C9.282 19.4444 11.2 18.1667 11.2 16.6667C11.2 15.1389 9.744 14.5833 6.664 13.8472C3.696 13.1111 0 12.1944 0 8.33333C0 5.84722 2.058 3.73611 4.9 3.02778V0H9.1V3.02778C11.942 3.73611 14 5.84722 14 8.33333H11.2C11.2 6.83333 9.282 5.55556 7 5.55556C4.718 5.55556 2.8 6.83333 2.8 8.33333C2.8 9.86111 4.256 10.4167 7.336 11.1528C10.304 11.8889 14 12.8056 14 16.6667C14 19.1528 11.942 21.2639 9.1 21.9722V25H4.9V21.9722C2.058 21.2639 0 19.1528 0 16.6667Z" fill="white"/>
                 </svg>
@@ -41,7 +41,7 @@
                 </svg>
             </a>
             
-            <a class="header__contact" href="#">
+            <a id="btnReferal" class="header__contact" href="#">
                 <img src="./img/contact.svg" alt="img">
             </a>
         </div>
@@ -65,12 +65,12 @@
 
 
     <div class="footer">
-        <a id="btn2" class="footer__btn btn" href="#">
+        <a class="footer__btn btn" href="#">
             БОНУС
             <img src="./img/gift.svg" alt="gift">
         </a>
 
-        <a id="btn3" class="footer__left" href="#">
+        <a class="footer__left" href="#">
             <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.33338 3.24998H5.44448C3.34935 3.24998 2.30134 3.24998 1.65067 3.90878C1 4.56758 1 5.62868 1 7.74999V12.25C1 14.3713 1 15.4315 1.65067 16.0912C2.30134 16.75 3.34935 16.75 5.44448 16.75H6.33338M6.33338 5.02838C6.33338 2.96467 6.33338 1.93237 6.96183 1.36807C7.59028 0.803767 8.55117 0.972967 10.473 1.31227L12.5441 1.67857C14.6721 2.05387 15.7361 2.24197 16.3681 3.03217C17.0001 3.82328 17.0001 4.96628 17.0001 7.25319V12.7477C17.0001 15.0337 17.0001 16.1767 16.369 16.9678C15.7361 17.758 14.6712 17.9461 12.5432 18.3223L10.4739 18.6877C8.55206 19.027 7.59117 19.1962 6.96272 18.6319C6.33338 18.0676 6.33338 17.0353 6.33338 14.9716V5.02838Z" stroke="#E40606" stroke-width="1.5"/>
                 <path d="M8.99988 9.09991V10.8999" stroke="#E40606" stroke-width="1.5" stroke-linecap="round"/>
@@ -82,11 +82,11 @@
 
 
 
-    <!-- <div class="modals">
+    <div class="modals">
         <a class="modal__btn btn">1</a>
-        <a class="modal__btn btn">2</a>
-        <a class="modal__btn btn">3</a>
-    </div> -->
+        <a class="modal__btn btn btn-gray">2</a>
+        <a class="modal__btn btn btn-gray">3</a>
+    </div>
 
 </div>
 
@@ -95,7 +95,7 @@
 <!-- MODALS -->
 
 
-<div id="modal1" class="modal mfp-hide">
+<div id="modalBalance" class="modal mfp-hide">
     <div class="modal__wrapper">
         <div class="modal__box">
             <div class="modal__top">
@@ -110,15 +110,16 @@
             </div>
         
             <div class="modal__content">
-                <a class="modal__btn-big" href="#">Депозит</a>
-                <a class="modal__btn-big blue" href="#">Вывод</a>
+                <a id="btnDepos" class="modal__btn-big" href="#">Депозит</a>
+                <a id="btnVivod" class="modal__btn-big blue" href="#">Вывод</a>
             </div>
         </div>
     </div>
+
+
 </div>
 
-
-<div id="modal2" class="modal mfp-hide">
+<div id="modalDepos" class="modal mfp-hide">
     <div class="modal__wrapper">
         <div class="modal__box">
             <div class="modal__top">
@@ -134,10 +135,7 @@
         
             <div class="modal__content">
                 <p class="modal__summa-title">Введите сумму депозита</p>
-                <div class="modal__summa">
-                    <p class="modal__summa-money">1000</p>
-                    <span>USDT</span>
-                </div>
+                <input class="modal__summa" type="text" placeholder="1000">
 
                 <input type="range" class="modal__range" min="0" max="100" value="50">
 
@@ -152,7 +150,39 @@
     </div>
 </div>
 
-<div id="modal3" class="modal mfp-hide">
+<div id="modalVivod" class="modal mfp-hide">
+    <div class="modal__wrapper">
+        <div class="modal__box">
+            <div class="modal__top">
+                <div class="modal__top-balance">
+                    <p class="modal__top-pretitle">Баланс:</p>
+                    <p class="modal__top-money">
+                        1000
+                        <span >USDT</span>
+                    </p>
+                </div>
+                <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+            </div>
+        
+            <div class="modal__content">
+                <p class="modal__summa-title">Введите сумму вывода</p>
+                <input class="modal__summa" type="text" placeholder="1000">
+
+                <input type="range" class="modal__range" min="0" max="100" value="50">
+
+                <p class="modal__summa-title">Введите номер кошелька/ карты</p>
+
+                <input type="text" placeholder="0000 0000 0000 0000">
+
+            </div>
+        </div>
+
+        <a class="btn modal__btn-bottom blue" href="#">Вывести</a>
+    </div>
+</div>
+
+
+<div id="modalReferal" class="modal mfp-hide">
     <div class="modal__wrapper">
 
         <div class="modal__box">
@@ -220,22 +250,7 @@
 </div>
 
 
-<!-- <div id="modalNUM" class="modal mfp-hide">
-    <div class="modal__wrapper">
 
-        <div class="modal__box">
-            <div class="modal__top">
-
-                <button title="Close (Esc)" type="button" class="mfp-close">×</button>
-            </div>
-        
-            <div class="modal__content">
-
-            </div>
-        </div>
-
-    </div>
-</div> -->
 
 
 

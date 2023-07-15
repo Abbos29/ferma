@@ -183,6 +183,9 @@ body {
 .modal__btn {
   cursor: pointer;
 }
+.modal__btn.btn-gray {
+  background: gray;
+}
 .modal__top {
   display: flex;
   align-items: flex-start;
@@ -220,6 +223,8 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  font-size: 40px !important;
+  font-weight: 500;
 }
 .modal__summa span {
   font-size: 16px;
@@ -231,10 +236,6 @@ body {
   font-weight: 400;
   color: #7B7B7B;
   padding-left: 10px;
-}
-.modal__summa-money {
-  font-size: 45px;
-  font-weight: 500;
 }
 .modal__item {
   padding: 15px;
@@ -281,9 +282,21 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: #258BFE;
+  padding-left: 10px;
+  position: relative;
 }
 .modal__list-lvl span {
   font-size: 12px;
+}
+.modal__list-lvl::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 16px;
+  background: #D6D6D6;
+  border-radius: 15px;
 }
 .modal__item-title {
   color: #7B7B7B;
@@ -338,6 +351,11 @@ body {
   background: linear-gradient(180deg, #00E64E 0%, #00C850 100%);
   box-shadow: 0px 4px 30px 0px rgba(124, 251, 80, 0.2);
   border: 2px solid #FFF;
+}
+.modal__btn-bottom.blue {
+  color: #fff;
+  background: linear-gradient(180deg, #24A2FD 0%, #246BFD 100%);
+  box-shadow: 0px 4px 30px 0px rgba(80, 122, 251, 0.35);
 }
 
 input[type=text] {
