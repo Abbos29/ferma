@@ -47,6 +47,24 @@ $(document).ready(function() {
     });
   });
 
+  $('#btnLogin').on('click', function() {
+    $.magnificPopup.open({
+      items: {
+        src: '#modalLogin'
+      },
+      type: 'inline'
+    });
+  });
+
+  $('#btnOut').on('click', function() {
+    $.magnificPopup.open({
+      items: {
+        src: '#modalOut'
+      },
+      type: 'inline'
+    });
+  });
+
 
 
   $('#btn1').on('click', function() {
