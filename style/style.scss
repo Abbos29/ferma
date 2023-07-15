@@ -91,28 +91,39 @@ body {
         top: 90px;
         left: 90px;
     }
-    img {
-        max-width: 240px;
-        width: 100%;
-    }
+    
+    // &::after {
+        //     content: '';
+    //     position: absolute;
+    //     cursor: pointer;
+    //     top: -30px;
+    //     left: 60px;
 
-    &::after {
-        content: '';
-        position: absolute;
-        cursor: pointer;
-        top: -30px;
-        left: 60px;
+    //     width: 100px;
+    //     height: 100px;
+    
+    //     background-image: url(../img/farm-icon-1.png);
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
 
-        width: 100px;
-        height: 100px;
+    // }
+}
 
-        background-image: url(../img/farm-icon-1.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+.main-plant-garden {
+    max-width: 240px;
+    width: 100%;
 
-        animation: bounce 2s ease-in-out infinite;
-    }
+}
+
+.main-plant-icon {
+    animation: bounce 2s ease-in-out infinite;
+
+    position: absolute;
+    top: -30px;
+    left: 60px;
+    max-width: 100px;
+    width: 100%;
 }
 
 .btn {

@@ -66,23 +66,19 @@ body {
     left: 90px;
   }
 }
-.main-plant img {
+
+.main-plant-garden {
   max-width: 240px;
   width: 100%;
 }
-.main-plant::after {
-  content: "";
+
+.main-plant-icon {
+  animation: bounce 2s ease-in-out infinite;
   position: absolute;
-  cursor: pointer;
   top: -30px;
   left: 60px;
-  width: 100px;
-  height: 100px;
-  background-image: url(../img/farm-icon-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: bounce 2s ease-in-out infinite;
+  max-width: 100px;
+  width: 100%;
 }
 
 .btn {
