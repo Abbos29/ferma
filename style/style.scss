@@ -29,7 +29,6 @@ $grayMain: #5B5B5B;
 }
 
 body {
-    overflow: hidden;
     position: relative;
     font-family: $fontMain;
     font-weight: 700;
@@ -48,6 +47,8 @@ body {
     margin: 0 auto;
     height: 100vh;
     padding: 0 15px;
+
+    overflow-x: hidden;
 
     display: flex;
     flex-direction: column;
@@ -249,18 +250,18 @@ body {
     &__btn {
         background: linear-gradient(180deg, #F9FD24 0%, #FD7224 100%);
         box-shadow: 0px 4px 30px 0px rgba(80, 251, 210, 0.40);
-        padding: 15px;
+        padding: 10px;
 
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        font-size: 40px;
+        font-size: 34px;
         font-weight: 700;
         color: #fff;
 
         img {
-            max-width: 60px;
+            max-width: 50px;
             width: 100%;
         }
     }
