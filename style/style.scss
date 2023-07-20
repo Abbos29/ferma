@@ -515,7 +515,7 @@ body {
         align-items: center;
         gap: 8px;
         // flex-wrap: wrap;
-        justify-content: space-between;
+        // justify-content: space-between;
         
 
         &.orange {
@@ -672,12 +672,33 @@ body {
     }
 }
 
+#modalDone {
+    .modal__icon {
+        width: 50px;
+        margin: 0 auto 20px;
+    }
+    
+    .modal__top-balance {
+        text-align: center;
+        padding-top: 20px;
+        .modal__top-money {
+            font-size: 40px;
+        }
+    }
+}
+
+#modalReferal {
+    .modal__item-box {
+        max-width: 400px;
+        width: 100%;
+    }
+}
 
 
 // INPUT
 
 input[type=text] {
-    max-width: 100%;
+    max-width: 400px;
     width: 100%;
     font-family: $fontMain;
     font-size: 18px;

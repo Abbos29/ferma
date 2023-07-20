@@ -374,7 +374,6 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  justify-content: space-between;
 }
 .modal__item.orange {
   background: linear-gradient(180deg, #F2AC22 0%, #F48620 100%);
@@ -507,8 +506,25 @@ body {
   background: linear-gradient(180deg, #FFF 0%, #E5E5E5 100%);
 }
 
+#modalDone .modal__icon {
+  width: 50px;
+  margin: 0 auto 20px;
+}
+#modalDone .modal__top-balance {
+  text-align: center;
+  padding-top: 20px;
+}
+#modalDone .modal__top-balance .modal__top-money {
+  font-size: 40px;
+}
+
+#modalReferal .modal__item-box {
+  max-width: 400px;
+  width: 100%;
+}
+
 input[type=text] {
-  max-width: 100%;
+  max-width: 400px;
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-size: 18px;

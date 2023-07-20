@@ -111,7 +111,7 @@
 
 
 <div class="modals">
-    <a class="modal__btn btn">1</a>
+    <a id="btnDone" class="modal__btn btn">1</a>
     <a class="modal__btn btn btn-gray">2</a>
     <a class="modal__btn btn btn-gray">3</a>
 </div>
@@ -228,7 +228,7 @@
                     <div class="modal__item-box">
                         <p class="modal__item-title">Ваша реферальная ссылка:</p>
                         <!-- <p class="modal__item-code">123kjhkh4kdfk4h334dfs.....</p> -->
-                        <input class="modal__item-code" type="text" value="123kjhkh4kdfk4h334dfs...">
+                        <input class="modal__item-code" type="text" value="123kjhkh4kdadsaasdasdfk4h334dfs...">
                     </div>
 
                     <a href="#">
@@ -350,6 +350,39 @@
             <div class="modal__content">
                 <a class="btn modal__btn-bottom blue" href="#">Выйти</a>
                 <a class="btn modal__btn-bottom red mfp-close" href="#">Отмена</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="modalDone" class="modal mfp-hide">
+    <div class="modal__wrapper">
+        <div class="modal__box">
+            <div class="modal__top">
+
+                <button title="Close (Esc)" type="button" class="mfp-close close close">×</button>
+            </div>
+
+            <div class="modal__icon">
+                <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.07 35.77L38.3425 18.4975L34.9125 15.0675L21.07 28.91L14.0875 21.9275L10.6575 25.3575L21.07 35.77Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5 49C21.1108 49 17.9258 48.3565 14.945 47.0694C11.9642 45.7823 9.37125 44.0371 7.16625 41.8337C4.96125 39.6287 3.21603 37.0358 1.9306 34.055C0.645167 31.0742 0.00163333 27.8892 0 24.5C0 21.1108 0.643534 17.9258 1.9306 14.945C3.21767 11.9642 4.96288 9.37125 7.16625 7.16625C9.37125 4.96125 11.9642 3.21603 14.945 1.9306C17.9258 0.645167 21.1108 0.00163333 24.5 0C27.8892 0 31.0742 0.643534 34.055 1.9306C37.0358 3.21767 39.6287 4.96288 41.8337 7.16625C44.0387 9.37125 45.7848 11.9642 47.0718 14.945C48.3589 17.9258 49.0016 21.1108 49 24.5C49 27.8892 48.3565 31.0742 47.0694 34.055C45.7823 37.0358 44.0371 39.6287 41.8337 41.8337C39.6287 44.0387 37.0358 45.7848 34.055 47.0718C31.0742 48.3589 27.8892 49.0016 24.5 49ZM38.3425 18.4975L21.07 35.77L10.6575 25.3575L14.0875 21.9275L21.07 28.91L34.9125 15.0675L38.3425 18.4975Z" fill="#5CDD1F"/>
+                </svg>
+            </div>
+
+            <p class="modal__title">Посажено</p>
+
+            <div class="modal__top-balance">
+                <p class="modal__top-money">
+                    1000
+                    <span >USDT</span>
+                </p>
+            </div>
+        
+            <div class="modal__content">
+                <!-- <a class="btn modal__btn-bottom blue" href="#">Выйти</a> -->
+                <a class="btn modal__btn-bottom blue mfp-close" href="#">OK</a>
             </div>
         </div>
     </div>

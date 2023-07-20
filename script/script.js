@@ -67,6 +67,15 @@ $(document).ready(function() {
     });
   });
 
+  $('#btnDone').on('click', function() {
+    $.magnificPopup.open({
+      items: {
+        src: '#modalDone'
+      },
+      type: 'inline'
+    });
+  });
+
 
 
   $('#btn1').on('click', function() {
